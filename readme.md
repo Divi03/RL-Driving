@@ -37,7 +37,7 @@ This repository implements a self-driving car agent using reinforcement learning
 
 Watch the demo of the self-driving car agent in action:
 
-[![Watch the video](https://stable-baselines3.readthedocs.io/en/master/_static/logo.png)](https://www.youtube.com/watch?v=rFwQDDbYTm4)
+[![Watch the video](https://stable-baselines3.readthedocs.io/en/master/_static/logo.png)](https://drive.google.com/file/d/1S5NC-2VCG6OWEvTxj2_3zSqBmFT7vXmf/view?usp=sharing)
 
 ---
 
@@ -49,7 +49,7 @@ Watch the demo of the self-driving car agent in action:
 
 - **PPO Agent**  
   `RL/result/Agent_play.py`  
-  ➤ Runs the trained PPO agent with segmentation and reward shaping.
+  ➤ Runs the trained PPO agent.
 
 - **Knowledge Distillation Agent**  
   `random_domain_agent.py`  

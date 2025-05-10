@@ -145,7 +145,7 @@ while not done:
     done = terminated or truncated
 
     frame_count += 1
-    print(frame_count)
+    # print(frame_count)
     new_mask = get_binary_mask(obs, frame_count, center_color) / 255.0
     frame_stack.append(new_mask)
 
