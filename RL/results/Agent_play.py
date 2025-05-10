@@ -7,6 +7,7 @@ from torch.distributions import Beta
 import torch.optim as optim
 from torch.utils.data.sampler import BatchSampler, SubsetRandomSampler
 import torch.nn as nn
+import matplotlib.pyplot as plt
 
 class Net(nn.Module):
     """
@@ -182,7 +183,7 @@ video_dir = "/Applications/Files/SEM_7/MAJOR/RL/datavideos"  # Path where videos
 os.makedirs(video_dir, exist_ok=True)  # Make sure the directory exists
 
 
-env = gym.make('CarRacing-v2', verbose=1, render_mode='human')
+env = gym.make('CarRacing-v2', verbose=1, render_mode='human', domain_randomize=False)
 # env = gym.wrappers.RecordVideo(env, video_dir, episode_trigger=lambda x: True)  # Record all episodes
 env_wrap = Wrapper(env)
 
@@ -208,6 +209,9 @@ def play(env, agent, n_episodes):
         while True:
             # Select action from the agent
             action, a_logp = agent.select_action(state)
+            # plt.imshow(state[3])
+            # plt.show()
+            # print(state.shape)
             env.render()
 
             # Take a step in the wrapped environment
@@ -232,8 +236,9 @@ def play(env, agent, n_episodes):
     return scores
 
 
-load(agent, '/Applications/Files/SEM_7/MAJOR/RL/model', 'model_weights_800.pth')
-play(env, agent, n_episodes=5)
+load(agent, '/Applications/Files/SEM_7/MAJOR/RL/model', 'model_weights_best.pth')
 
+play(env, agent, n_episodes=1)
+# /Users/divyansh/Downloads/model_weights_best.pth
 # Close the environment
 env.close()

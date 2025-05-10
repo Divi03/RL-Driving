@@ -1,4 +1,4 @@
-
+<!-- 
 # Project Ideas on Reinforcement Learning and Supervised Imitation Learning
 
 ## Idea 1: Supervised Learning (SL) in Imitation Learning
@@ -24,4 +24,45 @@
 
 ## Summary
 - Each idea builds upon the previous one, allowing for a comparative analysis of learning methods.
-- The integration of SL data into RL could offer insights into how imitation learning can enhance the robustness of RL agents.
+- The integration of SL data into RL could offer insights into how imitation learning can enhance the robustness of RL agents. -->
+
+
+# 🚘 AI Navigation in OpenAI Gym using Reinforcement Learning
+
+This repository implements a self-driving car agent using reinforcement learning techniques to navigate OpenAI Gym's CarRacing-v2 environment. The goal is to keep the car within track limits while achieving high performance across randomly generated tracks.
+
+---
+
+## 🎥 Demo Video
+
+Watch the demo of the self-driving car agent in action:
+
+[![Watch the video](https://stable-baselines3.readthedocs.io/en/master/_static/logo.png)](https://www.youtube.com/watch?v=rFwQDDbYTm4)
+
+---
+
+## 🧪 How to Run
+
+- **DQN Agent**  
+  `run/play_policy_template.py`  
+  ➤ Runs the initial DQN-based discrete control policy.
+
+- **PPO Agent**  
+  `RL/result/Agent_play.py`  
+  ➤ Runs the trained PPO agent with segmentation and reward shaping.
+
+- **Knowledge Distillation Agent**  
+  `random_domain_agent.py`  
+  ➤ Runs the compressed student agent trained via knowledge distillation.
+
+---
+
+## 📦 Trained Models
+
+🔗 [Download All Models from Google Drive](https://drive.google.com/drive/folders/1C7fx1pMZig1eAmuwkWHhjivr-_Ou2DSK?usp=sharing)
+
+Includes:
+- DQN Model  
+- PPO Model  
+- KD Student Model  
+---

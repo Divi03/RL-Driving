@@ -12,3 +12,9 @@
 /Devansh.py
 /Extras
 /media
+
+/DATA_GENERATION
+/BehaviourCloning
+./test_mask.py
+
+*.pt

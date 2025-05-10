@@ -1,4 +1,4 @@
-# Project Ideas on Reinforcement Learning and Supervised Imitation Learning
+<!-- # Project Ideas on Reinforcement Learning and Supervised Imitation Learning
 
 ## Idea 1: Reinforcement Learning (RL) Alone
 - [ ] **Objective**: Develop an RL agent to learn optimal control in the OpenAI Gym car racing environment.
@@ -64,4 +64,6 @@
 
 ## Summary
 - Each idea is structured to build on the previous, allowing for a comprehensive analysis of RL and SL methods.
-- The integration of SL data into RL frameworks can provide deeper insights into their synergies and performance enhancements.
+- The integration of SL data into RL frameworks can provide deeper insights into their synergies and performance enhancements. -->
+
+
